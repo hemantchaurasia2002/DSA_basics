@@ -1,32 +1,3 @@
-// package main
-
-// import (
-// 	"fmt"
-// )
-
-// func primeNumbers(n int) {
-// 	for i := 2; i <= n; i++ {
-
-// 		 isPrime := true
-		 
-// 	for j := 2; j <= i; j++ {
-// 		 if i%j == 0 {
-// 				isPrime = false
-// 				break
-// 		 }
-// 	}
-// 	if isPrime {
-// 				fmt.Println(i)
-// 		 }
-// 	}
-// }
-
-// func main() {
-// 	var n int = 101 
-// 	fmt.Println(primeNumbers(n))
-	
-
-// }
 
 package main
 
