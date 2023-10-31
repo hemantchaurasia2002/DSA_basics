@@ -1,3 +1,4 @@
+//Program to check a number is palindrome or not
 package main 
 
 import (
