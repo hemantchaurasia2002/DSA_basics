@@ -5,20 +5,28 @@ import(
 	"fmt"
 )
 
-func gcd(a,b int) int{
-	for a!=b {
-		if a>b {
-			a=a-b
+func gcd(x,y int) int{
+	for x!=y {
+		if x>y {
+			x=x-y
 		}else{
-			b=b-a
+			y=y-x
 		}
 	}
-	return a
+	return x
+}
+
+func gcdOptimized(x,y int) int{
+	if y==0 {
+		return x
+	}
+	return gcd(y, x%y)
 }
 
 func main() {
 	var a,b int
 	fmt.Printf("Enter the 2 digits : ")
 	fmt.Scanf("%d %d", &a,&b)
-	fmt.Printf("GCD : %v", gcd(a,b))
+	fmt.Printf("GCD : %v\n", gcd(a,b))
+	fmt.Printf("Optimized GCD : %v", gcdOptimized(a,b))
 }
