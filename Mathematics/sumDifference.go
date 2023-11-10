@@ -1,3 +1,5 @@
+//find the difference of sum of the numbers which are divible by m and not divisible by m
+
 package main
 
 import (
