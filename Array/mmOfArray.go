@@ -1,3 +1,4 @@
+//Find mean median of an array
 package main
 
 import (
